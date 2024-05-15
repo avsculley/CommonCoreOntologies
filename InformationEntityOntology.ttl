@@ -1,4 +1,4 @@
-@prefix : <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix : <http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology#> .
 @prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -6,20 +6,31 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology> .
+@base <https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/InformationEntityOntology.ttl> .
 
-<http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology> rdf:type owl:Ontology ;
-                                                                                        owl:versionIRI <http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2024-02-14/InformationEntityOntology> ;
-                                                                                        owl:imports <http://www.ontologyrepository.com/CommonCoreOntologies/Mid/GeospatialOntology> ,
-                                                                                                    <http://www.ontologyrepository.com/CommonCoreOntologies/Mid/TimeOntology> ;
-                                                                                        <http://purl.org/dc/terms/license> <https://opensource.org/licenses/BSD-3-Clause> ;
-                                                                                        rdfs:comment "This ontology is designed to represent generic types of information as well as the relationships between information and other entities."@en ;
-                                                                                        rdfs:label "Information Entity Ontology"@en ;
-                                                                                        owl:versionInfo "Version 1.5"@en .
+<https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/InformationEntityOntology.ttl> rdf:type owl:Ontology ;
+                                                                                                                   owl:versionIRI <https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/InformationEntityOntology.ttl> ;
+                                                                                                                   owl:imports <http://www.ontologyrepository.com/CommonCoreOntologies/Mid/GeospatialOntology> ,
+                                                                                                                               <http://www.ontologyrepository.com/CommonCoreOntologies/Mid/TimeOntology> ;
+                                                                                                                   <http://purl.org/dc/terms/license> <https://opensource.org/licenses/BSD-3-Clause> ;
+                                                                                                                   rdfs:comment "This ontology is designed to represent generic types of information as well as the relationships between information and other entities."@en ;
+                                                                                                                   rdfs:label "Information Entity Ontology"@en ;
+                                                                                                                   owl:versionInfo "Version 1.5"@en .
 
 #################################################################
 #    Object Properties
 #################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000084
+obo:BFO_0000084 rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000101
+obo:BFO_0000101 rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000197
+obo:BFO_0000197 rdf:type owl:ObjectProperty .
 
 
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/condition_described_by
@@ -451,6 +462,10 @@ cco:has_text_value rdf:type owl:DatatypeProperty ;
 #################################################################
 #    Classes
 #################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000006
+obo:BFO_0000006 rdf:type owl:Class .
+
 
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/AbbreviatedName
 cco:AbbreviatedName rdf:type owl:Class ;
