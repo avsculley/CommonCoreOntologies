@@ -478,6 +478,7 @@ cco:AbbreviatedName rdf:type owl:Class ;
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/AcademicDegreeContent
 cco:AcademicDegreeContent rdf:type owl:Class ;
                           rdfs:subClassOf cco:CertificateContent ;
+                          cco:definition "A Certificate Content issued by an Educational Organization to a Person to indicate that the Person has satisfactorily completed a course of study, or as an honorary recognition of the Person's achievement."@en ;
                           cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                           rdfs:label "Academic Degree Content"@en .
 
@@ -860,6 +861,7 @@ cco:EANBarcodeContent rdf:type owl:Class ;
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/EmailMessageContent
 cco:EmailMessageContent rdf:type owl:Class ;
                         rdfs:subClassOf cco:MessageContent ;
+                        cco:definition "A Message Content that is transmitted to the recipient's Email Box."@en ;
                         cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                         rdfs:label "Email Message Content"@en .
 
@@ -1016,6 +1018,7 @@ cco:Initialism rdf:type owl:Class ;
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/InstrumentDisplayPanelContent
 cco:InstrumentDisplayPanelContent rdf:type owl:Class ;
                                   rdfs:subClassOf cco:MeasurementInformationContentEntity ;
+                                  cco:definition "A Measurement Information Content Entity that is about some Artifact and is derived by the instrumentation Sensors of that Artifact."@en ;
                                   cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                                   rdfs:label "Instrument Display Panel Content"@en .
 
@@ -1061,6 +1064,7 @@ cco:Jan13BarcodeContent rdf:type owl:Class ;
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/JournalArticleContent
 cco:JournalArticleContent rdf:type owl:Class ;
                           rdfs:subClassOf cco:DocumentContent ;
+                          cco:definition "A Document Content that is a specific brief composition on a specific topic as part of a Journal Issue."@en ;
                           cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                           rdfs:label "Journal Article Content"@en .
 
@@ -1310,6 +1314,7 @@ cco:NonNameIdentifier rdf:type owl:Class ;
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/NotificationMessageContent
 cco:NotificationMessageContent rdf:type owl:Class ;
                                rdfs:subClassOf cco:MessageContent ;
+                               cco:definition "A Message Content that describes a scenario that has been determined to merit attention by the recipient."@en ;
                                cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                                rdfs:label "Notification Message Content"@en .
 
@@ -1512,6 +1517,7 @@ cco:ReliabilityMeasurementInformationContentEntity rdf:type owl:Class ;
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/ReportContent
 cco:ReportContent rdf:type owl:Class ;
                   rdfs:subClassOf cco:DocumentContent ;
+                  cco:definition "A Document Content that conveys an account of some event, situation, or the result of some observation or inquiry."@en ;
                   cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                   rdfs:label "Report Content"@en .
 
@@ -1623,13 +1629,6 @@ cco:StandardTimeOfDayIdentifier rdf:type owl:Class ;
                                 rdfs:label "Standard Time of Day Identifier"@en .
 
 
-###  http://www.ontologyrepository.com/CommonCoreOntologies/SystemClockContent
-cco:SystemClockContent rdf:type owl:Class ;
-                       rdfs:subClassOf cco:TimekeepingInstrumentContent ;
-                       cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
-                       rdfs:label "System Clock Content"@en .
-
-
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/TemporalInstantIdentifier
 cco:TemporalInstantIdentifier rdf:type owl:Class ;
                               owl:equivalentClass [ owl:intersectionOf ( cco:TemporalRegionIdentifier
@@ -1721,6 +1720,7 @@ W3C (https://www.w3.org/TR/NOTE-datetime)"""@en ,
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/TimekeepingInstrumentContent
 cco:TimekeepingInstrumentContent rdf:type owl:Class ;
                                  rdfs:subClassOf cco:CountMeasurementInformationContentEntity ;
+                                 cco:definition "An Information Content Entity that is about some temporal region."@en ;
                                  cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                                  rdfs:label "Timekeeping Instrument Content"@en .
 
@@ -1794,6 +1794,7 @@ cco:VideoContent rdf:type owl:Class ;
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/WarningMessageContent
 cco:WarningMessageContent rdf:type owl:Class ;
                           rdfs:subClassOf cco:NotificationMessageContent ;
+                          cco:definition "A Notification Message Content that describes a possible or impending threat."@en ;
                           cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                           rdfs:label "Warning Message Content"@en .
 
