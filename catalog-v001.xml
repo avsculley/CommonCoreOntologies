@@ -1,15 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology" uri="AgentOntology.ttl"/>
-    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology" uri="EventOntology.ttl"/>
-    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ArtifactOntology" uri="ArtifactOntology.ttl"/>
-    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/FacilityOntology" uri="FacilityOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/MergedAllCoreOntology" uri="cco%2Dmerged/previous%2Dversions/MergedAllCoreOntology%2Dv1.4%2D2023%2D04%2D07.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2023-04-07/MergedAllCoreOntology" uri="cco%2Dmerged/previous%2Dversions/MergedAllCoreOntology%2Dv1.4%2D2023%2D04%2D07.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/MergedAllCoreOntology" uri="cco%2Dmerged/previous%2Dversions/MergedAllCoreOntology_v1.3.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2020-09-23/MergedAllCoreOntology" uri="cco%2Dmerged/previous%2Dversions/MergedAllCoreOntology_v1.3.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/MergedAllCoreOntology" uri="cco%2Dmerged/previous%2Dversions/MergedAllCoreOntology%2Dv1.3%2D2021%2D03%2D01.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2021-03-01/MergedAllCoreOntology" uri="cco%2Dmerged/previous%2Dversions/MergedAllCoreOntology%2Dv1.3%2D2021%2D03%2D01.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/MergedAllCoreOntology" uri="cco%2Dmerged/MergedAllCoreOntology%2Dv1.5%2D2024%2D02%2D14.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2024-02-14/MergedAllCoreOntology" uri="cco%2Dmerged/MergedAllCoreOntology%2Dv1.5%2D2024%2D02%2D14.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/bfo.owl" uri="imports/bfo%2Dcore.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/bfo/2020/bfo-core.ttl" uri="imports/bfo%2Dcore.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Domain/ObsoleteTerms" uri="documentation/legacy%20documentation/ObsoleteTerms.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Domain/2023-04-07/ObsoleteTerms" uri="documentation/legacy%20documentation/ObsoleteTerms.ttl"/>
     <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/QualityOntology" uri="QualityOntology.ttl"/>
-    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/CurrencyUnitOntology" uri="CurrencyUnitOntology.ttl"/>
-    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/GeospatialOntology" uri="GeospatialOntology.ttl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/bfo/2020/bfo-core.ttl" uri="imports/bfo-core.ttl"/>
-    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ExtendedRelationOntology" uri="ExtendedRelationOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2024-02-14/QualityOntology" uri="QualityOntology.ttl"/>
     <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/TimeOntology" uri="TimeOntology.ttl"/>
-    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology" uri="InformationEntityOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2024-02-14/TimeOntology" uri="TimeOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AllCoreOntology" uri="AllCoreOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2024-02-14/AllCoreOntology" uri="AllCoreOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ModalRelationOntology" uri="ModalRelationOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2024-02-14/ModalRelationOntology" uri="ModalRelationOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology" uri="AgentOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2024-02-14/AgentOntology" uri="AgentOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology" uri="EventOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2024-02-14/EventOntology" uri="EventOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/CurrencyUnitOntology" uri="CurrencyUnitOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2024-02-14/CurrencyUnitOntology" uri="CurrencyUnitOntology.ttl"/>
     <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/UnitsOfMeasureOntology" uri="UnitsOfMeasureOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2024-02-14/UnitsOfMeasureOntology" uri="UnitsOfMeasureOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/ArtifactOntology.ttl" uri="ArtifactOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/ArtifactOntology.ttl" uri="ArtifactOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ExtendedRelationOntology" uri="ExtendedRelationOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2024-02-14/ExtendedRelationOntology" uri="ExtendedRelationOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/GeospatialOntology" uri="GeospatialOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2024-02-14/GeospatialOntology" uri="GeospatialOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/FacilityOntology" uri="FacilityOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2024-02-14/FacilityOntology" uri="FacilityOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/IEO-AO.ttl" uri="IEO%2DAO.ttl"/>
+    <uri id="User Entered Import Resolution" name="https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/IEO-AO.ttl" uri="IEO%2DAO.ttl"/>
+    <uri id="User Entered Import Resolution" name="https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/InformationEntityOntology.ttl" uri="InformationEntityOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/InformationEntityOntology.ttl" uri="InformationEntityOntology.ttl"/>
 </catalog>
