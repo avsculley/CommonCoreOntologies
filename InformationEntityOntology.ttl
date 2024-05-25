@@ -1,4 +1,4 @@
-@prefix : <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix : <http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology#> .
 @prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -534,6 +534,7 @@ cco:ArtificialLanguage rdf:type owl:Class ;
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/AztecCodeContent
 cco:AztecCodeContent rdf:type owl:Class ;
                      rdfs:subClassOf cco:TwoDimensionalBarcodeContent ;
+                     cco:definition "A Two-Dimensional Barcode Content that is used by the transportation industry to scan tickets."@en ;
                      cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                      rdfs:label "Aztec Code Content"@en .
 
@@ -619,6 +620,7 @@ cco:ClockTimeSystem rdf:type owl:Class ;
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/Code128BarcodeContent
 cco:Code128BarcodeContent rdf:type owl:Class ;
                           rdfs:subClassOf cco:OneDimensionalBarcodeContent ;
+                          cco:definition "A One-Dimensional Barcode Content that is encoded as a pattern of up to 128 ASCII characters and is used primarily in supply chains."@en ;
                           cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                           rdfs:label "Code 128 Barcode Content"@en .
 
@@ -626,6 +628,7 @@ cco:Code128BarcodeContent rdf:type owl:Class ;
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/Code39BarcodeContent
 cco:Code39BarcodeContent rdf:type owl:Class ;
                          rdfs:subClassOf cco:OneDimensionalBarcodeContent ;
+                         cco:definition "A One-Dimensional Barcode Content that is encoded as a pattern consistinf of 39 characters that are numbers 0-9, capital letters A-Z, or the symbols -.$/+% and space and is used primarily in automotive and defense industries."@en ;
                          cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                          rdfs:label "Code 39 Barcode Content"@en .
 
@@ -633,6 +636,7 @@ cco:Code39BarcodeContent rdf:type owl:Class ;
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/Code93BarcodeContent
 cco:Code93BarcodeContent rdf:type owl:Class ;
                          rdfs:subClassOf cco:OneDimensionalBarcodeContent ;
+                         cco:definition "A One-Dimensional Barcode Content that is encoded as a pattern consisting of up to 93 ASCII characters and is used in logistics to identify packages in retail inventory, lable electornic components, and provide supplementary delivery information."@en ;
                          cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                          rdfs:label "Code 93 Barcode Content"@en .
 
@@ -666,6 +670,7 @@ cco:CountMeasurementInformationContentEntity rdf:type owl:Class ;
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/DataMatrixCodeContent
 cco:DataMatrixCodeContent rdf:type owl:Class ;
                           rdfs:subClassOf cco:TwoDimensionalBarcodeContent ;
+                          cco:definition "A Two-Dimensional Barcode Content that is encoded as a pattern consisting of cells arranged in rectangular patterns and is used for marking small items in logistics and operations."@en ;
                           cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                           rdfs:label "Data Matrix Code Content"@en .
 
@@ -840,6 +845,7 @@ cco:DocumentFormContent rdf:type owl:Class ;
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/EAN13BarcodeContent
 cco:EAN13BarcodeContent rdf:type owl:Class ;
                         rdfs:subClassOf cco:EANBarcodeContent ;
+                        cco:definition "An EAN Barcode Content that is encoded as a pattern consisting of 13 numerical digits and is used to designate products at the point of sale."@en ;
                         cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                         rdfs:label "EAN-13 Barcode Content"@en .
 
@@ -847,6 +853,7 @@ cco:EAN13BarcodeContent rdf:type owl:Class ;
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/EAN8BarcodeContent
 cco:EAN8BarcodeContent rdf:type owl:Class ;
                        rdfs:subClassOf cco:EANBarcodeContent ;
+                       cco:definition "An EAN Barcode Content that is encoded as a pattern consisting of 8 numerical digits and is used to designate products at the point of sale."@en ;
                        cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                        rdfs:label "EAN-8 Barcode Content"@en .
 
@@ -854,6 +861,7 @@ cco:EAN8BarcodeContent rdf:type owl:Class ;
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/EANBarcodeContent
 cco:EANBarcodeContent rdf:type owl:Class ;
                       rdfs:subClassOf cco:OneDimensionalBarcodeContent ;
+                      cco:definition "A One-Dimensional Barcode Content that is encoded as a pattern consisting of 8 or 13 numerical digits and is used to scan consumer goods."@en ;
                       cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                       rdfs:label "EAN Barcode Content"@en .
 
@@ -889,6 +897,7 @@ cco:EventStatusNominalInformationContentEntity rdf:type owl:Class ;
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/GS1DataBarBarcodeContent
 cco:GS1DataBarBarcodeContent rdf:type owl:Class ;
                              rdfs:subClassOf cco:OneDimensionalBarcodeContent ;
+                             cco:definition "A One-Dimensional Barcode Content that is encoded as a pattern consisting of 2-14 numerical digits and is used in retail and healthcare."@en ;
                              cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                              rdfs:label "GS1 DataBar Barcode Content"@en .
 
@@ -922,6 +931,7 @@ cco:GreenwichMeanTimeZoneIdentifier rdf:type owl:Class ;
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/ISBNBarcodeContent
 cco:ISBNBarcodeContent rdf:type owl:Class ;
                        rdfs:subClassOf cco:EANBarcodeContent ;
+                       cco:definition "An EAN Barcode Content that is used to designate books."@en ;
                        cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                        rdfs:label "ISBN Barcode Content"@en .
 
@@ -929,6 +939,7 @@ cco:ISBNBarcodeContent rdf:type owl:Class ;
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/ISSNBarcodeContent
 cco:ISSNBarcodeContent rdf:type owl:Class ;
                        rdfs:subClassOf cco:EANBarcodeContent ;
+                       cco:definition "An EAN Barcode Content that is used to designate periodicals."@en ;
                        cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                        rdfs:label "ISSN Barcode Content"@en .
 
@@ -936,6 +947,7 @@ cco:ISSNBarcodeContent rdf:type owl:Class ;
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/ITFBarcodeContent
 cco:ITFBarcodeContent rdf:type owl:Class ;
                       rdfs:subClassOf cco:OneDimensionalBarcodeContent ;
+                      cco:definition "A One-Dimensional Barcode Content that is encoded as a pattern consisting of an even number of numerical characters and is used primarily in packaging and distribution."@en ;
                       cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                       rdfs:label "ITF Barcode Content"@en .
 
@@ -1050,6 +1062,7 @@ cco:IntervalMeasurementInformationContentEntity rdf:type owl:Class ;
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/Jan13BarcodeContent
 cco:Jan13BarcodeContent rdf:type owl:Class ;
                         rdfs:subClassOf cco:EANBarcodeContent ;
+                        cco:definition "An EAN Barcode Content that is encoded as a pattern consisting of 13 numerical digits and is used primarily in Japan to designate products at the point of sale."@en ;
                         cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                         rdfs:label "JAN-13 Barcode Content"@en .
 
@@ -1148,6 +1161,7 @@ cco:LunarCalendarSystem rdf:type owl:Class ;
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/MSIPlesseyBarcodeContent
 cco:MSIPlesseyBarcodeContent rdf:type owl:Class ;
                              rdfs:subClassOf cco:OneDimensionalBarcodeContent ;
+                             cco:definition "A One-Dimensional Barcode Content that is encoded as a pattern consisting of an indefinite number of numerical characters and is used for inventory control and marking storage containers and shelves in warehouse environments."@en ;
                              cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                              rdfs:label "MSI Plessey Barcode Content"@en .
 
@@ -1315,6 +1329,7 @@ cco:NotificationMessageContent rdf:type owl:Class ;
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/OneDimensionalBarcodeContent
 cco:OneDimensionalBarcodeContent rdf:type owl:Class ;
                                  rdfs:subClassOf cco:BarcodeContent ;
+                                 cco:definition "A Barcode Content that is encoded as a pattern consisting of one-dimensional symbols arranged as parallel lines."@en ;
                                  cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                                  rdfs:label "One-Dimensional Barcode Content"@en .
 
@@ -1354,6 +1369,7 @@ cco:OrdinalMeasurementInformationContentEntity rdf:type owl:Class ;
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/PDF417CodeContent
 cco:PDF417CodeContent rdf:type owl:Class ;
                       rdfs:subClassOf cco:TwoDimensionalBarcodeContent ;
+                      cco:definition "A Two-Dimensional Barcode Content that is used in applications that require the storage of huge amounts of data."@en ;
                       cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                       rdfs:label "PDF417 Code Content"@en .
 
@@ -1461,6 +1477,7 @@ cco:ProportionalRatioMeasurementInformationContentEntity rdf:type owl:Class ;
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/QRCodeContent
 cco:QRCodeContent rdf:type owl:Class ;
                   rdfs:subClassOf cco:TwoDimensionalBarcodeContent ;
+                  cco:definition "A Two-Dimensional Barcode Content that is encoded as a pattern consisting of numeric, alphanumeric, binary, or kanji information and is used primarily for tracking and marketing."@en ;
                   cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                   rdfs:label "QR Code Content"@en .
 
@@ -1729,6 +1746,7 @@ cco:TranscriptContent rdf:type owl:Class ;
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/TwoDimensionalBarcodeContent
 cco:TwoDimensionalBarcodeContent rdf:type owl:Class ;
                                  rdfs:subClassOf cco:BarcodeContent ;
+                                 cco:definition "A Barcode Content that is encoded as a pattern consisting of two-dimensional symbols."@en ;
                                  cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                                  rdfs:label "Two-Dimensional Barcode Content"@en .
 
@@ -1736,6 +1754,7 @@ cco:TwoDimensionalBarcodeContent rdf:type owl:Class ;
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/UPCABarcodeContent
 cco:UPCABarcodeContent rdf:type owl:Class ;
                        rdfs:subClassOf cco:UPCBarcodeContent ;
+                       cco:definition "A UPC Barcode Content that is encoded as a pattern consisting in 12 numerical digits."@en ;
                        cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                        rdfs:label "UPC-A Barcode Content"@en .
 
@@ -1743,6 +1762,7 @@ cco:UPCABarcodeContent rdf:type owl:Class ;
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/UPCBarcodeContent
 cco:UPCBarcodeContent rdf:type owl:Class ;
                       rdfs:subClassOf cco:OneDimensionalBarcodeContent ;
+                      cco:definition "A One-Dimensional Barcode Content that is encoded as a pattern consisting of 6 or 12 numerical digits and is used to scan consumer goods."@en ;
                       cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                       rdfs:label "UPC Barcode Content"@en .
 
@@ -1750,6 +1770,7 @@ cco:UPCBarcodeContent rdf:type owl:Class ;
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/UPCEBarcodeContent
 cco:UPCEBarcodeContent rdf:type owl:Class ;
                        rdfs:subClassOf cco:UPCBarcodeContent ;
+                       cco:definition "A UPC Barcode Content that is encoded as a pattern consisting of 6 numerical digits."@en ;
                        cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                        rdfs:label "UPC-E Barcode Content"@en .
 
@@ -1795,6 +1816,8 @@ cco:WarningMessageContent rdf:type owl:Class ;
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/Mid/CodabarBarcodeContent
 <http://www.ontologyrepository.com/CommonCoreOntologies/Mid/CodabarBarcodeContent> rdf:type owl:Class ;
                                                                                    rdfs:subClassOf cco:OneDimensionalBarcodeContent ;
+                                                                                   cco:definition "A One-Dimensional Barcode Content that is encoded as a pattern consisting of numerical digits 0-9 and the characters -$:/.+ and is used by logistics and healthcare professionals."@en ;
+                                                                                   cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                                                                                    rdfs:label "Codabar Barcode Content"@en .
 
 
