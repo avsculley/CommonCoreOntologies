@@ -1,8 +1,11 @@
 # IBE-IBA Refactor
-IEO file has changes to ICE branch.
-AO file has changes to IBA branch.
-IEO-AO file imports both plus BFO.
-Changelog file documents changes beginning on May 25, 2024. Some changes were made before then.
+* IEO file has changes to ICE branch.
+
+* AO file has changes to IBA branch.
+
+* IEO-AO file imports both plus BFO.
+
+* Changelog file documents changes beginning on May 25, 2024. Some changes were made before then.
 
 
 # Common Core Ontologies
