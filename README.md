@@ -1,3 +1,10 @@
+# IBE-IBA Refactor
+IEO file has changes to ICE branch.
+AO file has changes to IBA branch.
+IEO-AO file imports both plus BFO.
+Changelog file documents changes beginning on May 25, 2024. Some changes were made before then.
+
+
 # Common Core Ontologies
 The Common Core Ontologies (CCO) comprise twelve ontologies that are designed to represent and integrate taxonomies of generic classes and relations across all domains of interest.
 
