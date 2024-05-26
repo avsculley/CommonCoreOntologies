@@ -1,8 +1,8 @@
-IBA-ICE Refactor Changelog
+# IBA-ICE Refactor Changelog
 
-May 25, 2024
+## May 25, 2024
 
-Added:
+### Added:
 1. ***One-dimensional Barcode Content*** =def. A Barcode Content that is encoded as a pattern consisting of one-dimensional symbols arranged as parallel lines.
    1. ***UPC Barcode Content*** =def. A One-Dimensional Barcode Content that is encoded as a pattern consisting of 6 or 12 numerical digits and is used to scan consumer goods.
       1. ***UPC-A Barcode Content*** =def. A UPC Barcode Content that is encoded as a pattern consisting in 12 numerical digits.
@@ -27,5 +27,19 @@ Added:
    3.  ***Aztec Code Content*** =def. A Two-Dimensional Barcode Content that is used by the transportation industry to scan tickets.
    4.  ***Data Matrix Code Content*** =def. A Two-Dimensional Barcode Content that is encoded as a pattern consisting of cells arranged in rectangular patterns and is used for marking small items in logistics and operations. **Is it encoded as a pattern consisting of cells arranged in a rectanguar pattern, or it it just cells arranged in a rectangular pattern?**
 
+### Reccomended
+1. The corresponding IBAs in AO are reccommended for deprecation.
 
-3. The corresponding IBAs in AO are reccommended for deprecation.
+## May 26, 2024
+
+### Added:
+
+1. Information Structure Entity
+   1. http://www.ontologyrepository.com/CommonCoreOntologies/InformationStructureEntity
+   2. definition "A Generically Dependent Continuant that can relate Information Content Entities, and, if it does, partly constitutes an additional Information Content Entity that has it and the related Information Content Entities as parts."
+2. List Structure
+   1. http://www.ontologyrepository.com/CommonCoreOntologies/ListStructure
+   2. definition "An Information Structure Entity that can sequentially relate discrete Information Content Entities in an ordered or unordered manner."@en
+   3. 'definition source' "https://en.wikipedia.org/wiki/List"^^xsd:anyURI
+3. List Content
+   1. definition "An Information Content Entity that is encoded with some List Structure."
