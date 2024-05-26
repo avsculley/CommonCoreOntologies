@@ -43,3 +43,5 @@
    3. 'definition source' "https://en.wikipedia.org/wiki/List"^^xsd:anyURI
 3. List Content
    1. definition "An Information Content Entity that is encoded with some List Structure."
+4. List
+   1. definition "An Information Bearing Artifact that is carrier of some List Content." 
