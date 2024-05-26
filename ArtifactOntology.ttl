@@ -818,7 +818,7 @@ cco:CodeList rdf:type owl:Class ;
                                    owl:someValuesFrom cco:CodeListContent
                                  ] ;
              rdfs:subClassOf cco:List ;
-             cco:definition "A List that represents an ordered sequence of Information Bearing Entities that bear Code Identifiers."@en ;
+             cco:definition "A List that is carrier of some Code List Content."@en ;
              cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ArtifactOntology"^^xsd:anyURI ;
              rdfs:label "Code List"@en .
 
@@ -2689,8 +2689,7 @@ cco:List rdf:type owl:Class ;
                                owl:someValuesFrom cco:ListContent
                              ] ;
          rdfs:subClassOf cco:InformationBearingArtifact ;
-         cco:definition "An Information Bearing Artifact that represents an ordered sequence of values, where the same value may occur more than once."@en ;
-         cco:definition_source "https://en.wikipedia.org/w/index.php?title=List_(abstract_data_type)&oldid=1041588680"^^xsd:anyURI ;
+         cco:definition "An Information Bearing Artifact that is carrier of some List Content."@en ;
          cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ArtifactOntology"^^xsd:anyURI ;
          rdfs:label "List"@en .
 
