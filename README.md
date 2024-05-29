@@ -1,9 +1,11 @@
 # ICE-IBA Refactor
 * InformationEntityOntology file has changes to ICE branch.
 
-* ArtifactOntology file has changes to IBA branch.
+* ArtifactOntology file has changes to the IBA branch curated in AO.
+  
+* CyberOntology file has changes to the IBA branch curated in CO.
 
-* IEO-AO file imports both plus BFO.
+* IEO-AO-CO file imports both plus BFO.
 
 * Changelog file documents changes beginning on May 25, 2024. Some changes were made before then.
 
