@@ -10,6 +10,7 @@
                                                                                                 owl:versionIRI <https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/IEO-AO.ttl> ;
                                                                                                 owl:imports <http://purl.obolibrary.org/obo/bfo/2020/bfo-core.ttl> ,
                                                                                                             <https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/ArtifactOntology.ttl> ,
+<https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/CyberOntology.ttl> ,
 <https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/InformationEntityOntology.ttl>
 .
 
