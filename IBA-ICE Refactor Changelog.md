@@ -48,3 +48,11 @@
   
 ### Removed:
 1. Original IBA definition of 'List'
+
+## June 3, 2024
+
+### Added:
+
+1. Counterparts to IBA subclasses in the Cyber Ontology. These terms still need definitions, and the IBAs need to be edited such that they follow the pattern 'X is a IBA that is carrier of Y.' Note: I have not done anything that would promote any term in Cyber to the midlevel. I have only edited Cyber such that it is more consistent with the refactor.
+
+2. 
