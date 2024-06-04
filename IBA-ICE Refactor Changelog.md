@@ -64,5 +64,7 @@
 1. is_generically_dependent_part_of definition "x is generically dependent part of y =def. x & y are instances of generically dependent continuant, and x is continuant part of y."@en **_Note:_** Perhaps should be in BFO.
    1. is_information_structure_of definition "x is information structure of y =def. x is an instance of information structure entity, y is an instance of Information Content Entity, and x is generically dependent continuant part of y."@en
    2. is_information_content_part_of definition "x is information content part of y =def. x & y are instances of Information Content Entity, and x is generically dependent continuant part of y."@en
+  
+2. Inverse of the above.
 
 
