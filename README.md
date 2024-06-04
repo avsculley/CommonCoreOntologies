@@ -1,11 +1,12 @@
 # ICE-IBA Refactor
-* InformationEntityOntology file has changes to ICE branch.
+* InformationEntityOntology file has changes to ICE branch curated in IEO.
 
 * ArtifactOntology file has changes to the IBA branch curated in AO.
   
-* CyberOntology file has changes to the IBA branch curated in CO.
+* CyberOntology (C3O) file has changes to the IBA and ICE branches curated in C3O.
+  * It is important to note that the changes made to C3O only make it consistent with the ICE-IBA refactor of CCO and do not make decisions to promote terms from C3O to the mid-level. This means that IBA classes get ICE counterparts, and the IBA classes are defined as carriers of their ICE counterparts.
 
-* IEO-AO-CO file imports both plus BFO.
+* IEO-AO-CO file imports each plus BFO.
 
 * Changelog file documents changes beginning on May 25, 2024. Some changes were made before then.
 
