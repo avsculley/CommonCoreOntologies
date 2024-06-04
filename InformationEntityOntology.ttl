@@ -6,7 +6,7 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/InformationEntityOntology.ttl> .
+@base <http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology#> .
 
 <https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/InformationEntityOntology.ttl> rdf:type owl:Ontology ;
                                                                                                                    owl:versionIRI <https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/InformationEntityOntology.ttl> ;
@@ -173,6 +173,15 @@ cco:is_excerpted_from rdf:type owl:ObjectProperty ;
                       rdfs:label "is excerpted from"@en .
 
 
+###  http://www.ontologyrepository.com/CommonCoreOntologies/is_generically_dependent_continuant_part_of
+cco:is_generically_dependent_continuant_part_of rdf:type owl:ObjectProperty ;
+                                                rdfs:subPropertyOf obo:BFO_0000176 ;
+                                                owl:inverseOf <https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/InformationEntityOntology.ttl#0000313> ;
+                                                cco:definition "x is generically dependent part of y =def. x & y are instances of generically dependent continuant, and x is continuant part of y."@en ;
+                                                rdfs:comment "This should probably be in BFO." ;
+                                                rdfs:label "is generically dependent continuant part of"@en .
+
+
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/is_geospatial_coordinate_reference_system_of
 cco:is_geospatial_coordinate_reference_system_of rdf:type owl:ObjectProperty ;
                                                  rdfs:subPropertyOf cco:is_reference_system_of ;
@@ -182,6 +191,24 @@ cco:is_geospatial_coordinate_reference_system_of rdf:type owl:ObjectProperty ;
                                                  cco:definition "x is_geospatial_coordinate_reference_system_of y iff y is an instance of Information Bearing Entity and x is an instance of Geospatial Coordinate Reference System, such that x describes the set of standards mentioned in y."@en ;
                                                  cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                                                  rdfs:label "is geospatial coordinate reference system of"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/is_information_content_part_of
+cco:is_information_content_part_of rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf cco:is_generically_dependent_continuant_part_of ;
+                                   owl:inverseOf <https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/InformationEntityOntology.ttl#0000315> ;
+                                   cco:definition "x is information content part of y =def. x & y are instances of Information Content Entity, and x is generically dependent continuant part of y."@en ;
+                                   cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                                   rdfs:label "is information content part of"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/is_information_structure_of
+cco:is_information_structure_of rdf:type owl:ObjectProperty ;
+                                rdfs:subPropertyOf cco:is_generically_dependent_continuant_part_of ;
+                                owl:inverseOf <https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/InformationEntityOntology.ttl#0000314> ;
+                                cco:definition "x is information structure of y =def. x is an instance of information structure entity, y is an instance of Information Content Entity, and x is generically dependent continuant part of y."@en ;
+                                cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                                rdfs:label "is information structure of"@en .
 
 
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/is_measured_by
@@ -389,6 +416,30 @@ cco:uses_time_zone_identifier rdf:type owl:ObjectProperty ;
                               cco:definition "x uses_time_zone_identifier y iff x is an instance of Information Bearing Entity and y is an instance of Time Zone Identifier, such that y designates the spatial region associated with the time zone mentioned in x."@en ;
                               cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                               rdfs:label "uses time zone identifier"@en .
+
+
+###  https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/InformationEntityOntology.ttl#0000313
+<https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/InformationEntityOntology.ttl#0000313> rdf:type owl:ObjectProperty ;
+                                                                                                                          rdfs:subPropertyOf obo:BFO_0000178 ;
+                                                                                                                          cco:definition "y has generically dependent continuant part x =def. x is generically dependent continuant part of y."@en ;
+                                                                                                                          rdfs:comment "This should probably be in BFO."@en ;
+                                                                                                                          rdfs:label "has generically dependent continuant part"@en .
+
+
+###  https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/InformationEntityOntology.ttl#0000314
+<https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/InformationEntityOntology.ttl#0000314> rdf:type owl:ObjectProperty ;
+                                                                                                                          rdfs:subPropertyOf <https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/InformationEntityOntology.ttl#0000313> ;
+                                                                                                                          cco:definition "y has information structure x =def. x is information structure of y."@en ;
+                                                                                                                          cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                                                                                                                          rdfs:label "has information structure"@en .
+
+
+###  https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/InformationEntityOntology.ttl#0000315
+<https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/InformationEntityOntology.ttl#0000315> rdf:type owl:ObjectProperty ;
+                                                                                                                          rdfs:subPropertyOf <https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/InformationEntityOntology.ttl#0000313> ;
+                                                                                                                          cco:definition "y has information content part x =def. x is information content part of y."@en ;
+                                                                                                                          cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                                                                                                                          rdfs:label "has information content part"@en .
 
 
 #################################################################
@@ -1144,7 +1195,7 @@ cco:LegalName rdf:type owl:Class ;
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/ListContent
 cco:ListContent rdf:type owl:Class ;
                 rdfs:subClassOf cco:InformationContentEntity ;
-                cco:definition "An Information Content Entity that is encoded with some List Structure."@en ;
+                cco:definition "An Information Content Entity that has information structure some List Structure."@en ;
                 cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                 rdfs:label "List Content"@en .
 
@@ -2599,4 +2650,4 @@ cco:ZuluTimeZone rdf:type owl:NamedIndividual ,
                  rdfs:label "Zulu Time Zone"@en .
 
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
