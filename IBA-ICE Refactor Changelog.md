@@ -67,4 +67,31 @@
   
 2. Inverse of the above.
 
+## June 6, 2024
+
+### Changes:
+
+1. 'is_information_structure_of' to 'is_generic_structure_of'
+
+### Additions:
+
+#### GDC Branch
+
+1. Generic Structure Entity =def. definition "A Generically Dependent Continuant that can relate Generically Dependent Continuants, and if it does, partly consititutes an additional Generically Dependent Continuant along with the Generically Dependent Continuants it relates."@en
+   1. Database Structure (currently no def)
+   2. Spreadsheet Structure (currently no def)
+3. Generic Glyph Entity =def. definition "A Generically Dependent Continuant whose concretization can concretize some Information Content Entity wholly."@en
+   1. Primitive Generic Glyph Entity =def. definition "A Generic Glyph Entity that does not extend in any direction in logical space."@en
+      1. 'example of usage' "The GDCs concretized by 'X', 'F', 'L', '.', ',', '!', '1', '2', '3'."@en
+   3. Composite Generic Glyph Entity =def. definition "A Generic Glyph Entity that has generically dependent continuant part some Generic Structure Entity."@en
+
+#### ICE Branch
+
+1. Book Content =def. definition "A Document Content intended to be consumed by a relatively general audience and whose concretization is of substantial length."@en
+2. Video Content =def. definition "A Document Content consisting of a sequence of Image Contents that are intended to be presented in temporal sequence and perceived as a visual whole."@en
+3. Database content is now equivalent to an ICE that has generic structure some Database Structure.
+4. Spreadsheet content is now equivalent to an ICE that has generic structure some Database Structure.
+5. Document Form Content =def. definition "An Information Content Entity generically depends on some Document Form."@en
+
+
 
