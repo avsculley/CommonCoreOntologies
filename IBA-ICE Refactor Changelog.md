@@ -94,11 +94,21 @@
 5. Document Form Content =def. definition "An Information Content Entity generically depends on some Document Form."@en
 
 
-## June 12, 2024
+## June 12, 2024 (currently writing this)
 
-### Changes
+### Overall Changes
 
-### Additions
+Here is a first draft of the refactor. In the following, I will address changes that were made to the GDC branch, and as I do I will address the corresponding changes to the IBA branch. There is no need to read the above changes, as some of them were the result of scope creep which has been fixed in the following.
 
-1. Database structure definition "An Information Structure Entity that can relate Information Content Entites for efficient retrival, management, and use of the Information Content Entities."@en
-2. Spreadsheet structure definition "A Information Structure Entity that can relate Information Content Entities in tabular form."@en
+#### High-level Changes
+1. I added the class 'Information Entity' defined as "A Generically Dependent Continuant whose concretizations can facilitate some Act of Communication."
+   1. The justification for this is threefold. First, it allows me to later refer to the subclasses of the term in other definitions. Second, it adds sematic content to the subclasses, namely, that they can facilitate acts of communication. Third, it future-proofs the GDC branch, which might later include further groups of GDCs, like Mathematical Entities, or any other entities which are specific to certain domains. Structures, for example, are found in most domains (math, physics, biology, sociology), but this project just focuses on _Information_ structures.
+2. I added the class 'Information Structure Entity' defined as "An Information Entity that can relate Information Entities, and if it does, partly consititutes an additional Information Entity along with the Information Entities it relates."
+   1. The justification for this is that there are some information entities that need to be defined in terms of their structure. For example, Databases and Spreadsheets.
+4. I added the class 'Information Glyph Entity' defined as "An Information Entity whose concretization can concretize some Information Content Entity wholly."
+   1. The justification for this is that some entities, like Barcodes, need to be defined in terms of the marks used to represent them. 'Wholly' is meant to distinguish glyphs from structures, since concretizations of the latter can _partially_ concretize Information Content Entities insofar as they are parts of glyphs.
+5. I changed the definition of Information Content Entity to reflect that it is now a subclass of 'Information Entity,' instead of 'Generically Depedent Continuant.'
+6. I added subclasses of 'continuant part of' (and its inverse, but I won't mention those changes since they're somewhat redundant).
+   1. generically_dependent_continuant_part_of
+   2. information_structure_of
+   3. information_content_part_of
