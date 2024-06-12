@@ -707,15 +707,9 @@ cco:CodeIdentifier rdf:type owl:Class ;
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/CodeListContent
 cco:CodeListContent rdf:type owl:Class ;
                     rdfs:subClassOf cco:ListContent ;
+                    cco:definition "A List Content that has information content part only Code Identifiers."@en ;
                     cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                     rdfs:label "Code List Content"@en .
-
-
-###  http://www.ontologyrepository.com/CommonCoreOntologies/CompositeGenericGlyphEntity
-cco:CompositeGenericGlyphEntity rdf:type owl:Class ;
-                                rdfs:subClassOf cco:GenericGlyphEntity ;
-                                cco:definition "A Generic Glyph Entity that has generically dependent continuant part some Generic Structure Entity."@en ;
-                                rdfs:label "Composite Generic Glyph Entity"@en .
 
 
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/CountMeasurementInformationContentEntity
@@ -746,12 +740,20 @@ cco:DataRangeIntervalEstimateInformationContentEntity rdf:type owl:Class ;
 cco:DatabaseContent rdf:type owl:Class ;
                     owl:equivalentClass [ rdf:type owl:Restriction ;
                                           owl:onProperty cco:has_generic_structure ;
-                                          owl:someValuesFrom <https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/InformationEntityOntology.ttl#0000334>
+                                          owl:someValuesFrom cco:DatabaseStructure
                                         ] ;
                     rdfs:subClassOf cco:InformationContentEntity ;
                     cco:definition "A collection of information content entities access to which is by keyword, identifier, or structured query, such access designed to and intended to be fast relative to finding entities by examining each member of the collection in turn."@en ;
                     cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                     rdfs:label "Database Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/DatabaseStructure
+cco:DatabaseStructure rdf:type owl:Class ;
+                      rdfs:subClassOf cco:InformationStructureEntity ;
+                      cco:definition "An Information Structure Entity that can relate Information Content Entites for efficient retrival, management, and use of the Information Content Entities."@en ;
+                      cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                      rdfs:label "Database Structure"@en .
 
 
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/DateIdentifier
@@ -848,6 +850,7 @@ cco:DeviationMeasurementInformationContentEntity rdf:type owl:Class ;
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/DiagramContent
 cco:DiagramContent rdf:type owl:Class ;
                    rdfs:subClassOf cco:ImageContent ;
+                   cco:definition "An Image Content that is designed to represent some entitiy in a simplified way such that key aspects of the entitiy are conveyed."@en ;
                    cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                    rdfs:label "Diagram Content"@en .
 
@@ -958,21 +961,21 @@ cco:EventStatusNominalInformationContentEntity rdf:type owl:Class ;
                                                rdfs:label "Event Status Nominal Information Content Entity"@en .
 
 
+###  http://www.ontologyrepository.com/CommonCoreOntologies/FormatStructure
+cco:FormatStructure rdf:type owl:Class ;
+                    rdfs:subClassOf cco:InformationStructureEntity ;
+                    cco:definition "An Information Structure Entity that is prescribed by some Directive Information Content Entity."@en ;
+                    cco:example_of_usage "Microsoft Word Format, Spreadsheet Format (analog), Comma Seperated Value Format, Tab Seperated Value Format"@en ;
+                    cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                    rdfs:label "Format Structure"@en .
+
+
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/GS1DataBarBarcodeContent
 cco:GS1DataBarBarcodeContent rdf:type owl:Class ;
                              rdfs:subClassOf cco:OneDimensionalBarcodeContent ;
                              cco:definition "A One-Dimensional Barcode Content that is encoded as a pattern consisting of 2-14 numerical digits and is used in retail and healthcare."@en ;
                              cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                              rdfs:label "GS1 DataBar Barcode Content"@en .
-
-
-###  http://www.ontologyrepository.com/CommonCoreOntologies/GenericGlyphEntity
-cco:GenericGlyphEntity rdf:type owl:Class ;
-                       rdfs:subClassOf obo:BFO_0000031 ;
-                       owl:disjointWith cco:ListStructure ;
-                       cco:alternative_label "GGE"@en ;
-                       cco:definition "A Generically Dependent Continuant whose concretization can concretize some Information Content Entity wholly."@en ;
-                       rdfs:label "Generic Glyph Entity"@en .
 
 
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/GeospatialCoordinateReferenceSystem
@@ -1053,7 +1056,7 @@ cco:InformationBearingEntity rdf:type owl:Class ;
 
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity
 cco:InformationContentEntity rdf:type owl:Class ;
-                             owl:equivalentClass [ owl:intersectionOf ( obo:BFO_0000031
+                             owl:equivalentClass [ owl:intersectionOf ( cco:InformationEntity
                                                                         [ rdf:type owl:Restriction ;
                                                                           owl:onProperty cco:is_about ;
                                                                           owl:someValuesFrom obo:BFO_0000001
@@ -1061,13 +1064,31 @@ cco:InformationContentEntity rdf:type owl:Class ;
                                                                       ) ;
                                                    rdf:type owl:Class
                                                  ] ;
-                             rdfs:subClassOf obo:BFO_0000031 ;
+                             rdfs:subClassOf cco:InformationEntity ;
                              cco:alternative_label "ICE"@en ;
                              cco:definition "A Generically Dependent Continuant that generically depends on some Information Bearing Entity and stands in relation of aboutness to some Entity."@en ;
                              cco:definition_source "http://purl.obolibrary.org/obo/IAO_0000030" ;
                              cco:elucidation "Information Content Entity is here intended to be a class of Entities whose instances are the informational content of Information Bearing Entities. For example, three instances of information bearers -- such as a bar chart, color-coded map, and a written report -- each of which lists the GDP of Countries for the year 2010 are each different carriers of the same information content. It is this content that is generically dependent upon its carrier. This treatment of Informational Content Entity (cf. the Information Artifact Ontology) leads to a principle of subtyping based upon the relationship that ICE's have with the Entity they are about rather than characteristics such as format, language, measurement scale, or media. The latter are treated here as being Qualities of bearers."@en ;
                              cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                              rdfs:label "Information Content Entity"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/InformationEntity
+cco:InformationEntity rdf:type owl:Class ;
+                      rdfs:subClassOf obo:BFO_0000031 ;
+                      cco:definition "A Generically Dependent Continuant whose concretizations can facilitate Acts of Communication."@en ;
+                      cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                      rdfs:label "Information Entity"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/InformationGlyphEntity
+cco:InformationGlyphEntity rdf:type owl:Class ;
+                           rdfs:subClassOf cco:InformationEntity ;
+                           owl:disjointWith cco:ListStructure ;
+                           cco:alternative_label "IGE"@en ;
+                           cco:definition "An Information Entity whose concretization can concretize some Information Content Entity wholly."@en ;
+                           cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                           rdfs:label "Information Glyph Entity"@en .
 
 
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/InformationQualityEntity
@@ -1082,6 +1103,15 @@ cco:InformationQualityEntity rdf:type owl:Class ;
                              cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                              rdfs:comment "Typically, an IQE will be a complex pattern made up of multiple qualities joined together spatially."@en ;
                              rdfs:label "Information Quality Entity"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/InformationStructureEntity
+cco:InformationStructureEntity rdf:type owl:Class ;
+                               rdfs:subClassOf cco:InformationEntity ;
+                               cco:alternative_label "ISE"@en ;
+                               cco:definition "An Information Entity that can relate Information Entities, and if it does, partly consititutes an additional Information Entity along with the Information Entities it relates."@en ;
+                               cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                               rdfs:label "Information Structure Entity"@en .
 
 
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/Initialism
@@ -1220,8 +1250,8 @@ cco:ListContent rdf:type owl:Class ;
 
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/ListStructure
 cco:ListStructure rdf:type owl:Class ;
-                  rdfs:subClassOf <https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/InformationEntityOntology.ttl#0000325> ;
-                  cco:definition "An Information Structure Entity that can sequentially relate discrete Information Content Entities in an ordered or unordered manner."@en ;
+                  rdfs:subClassOf cco:InformationStructureEntity ;
+                  cco:definition "An Information Structure Entity that can relate Information Content Entities in an ordered and sequential manner."@en ;
                   cco:definition_source "https://en.wikipedia.org/wiki/List"^^xsd:anyURI ;
                   cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                   rdfs:label "List Structure"@en .
@@ -1485,6 +1515,8 @@ cco:PerformanceSpecification rdf:type owl:Class ;
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/PhotographContent
 cco:PhotographContent rdf:type owl:Class ;
                       rdfs:subClassOf cco:ImageContent ;
+                      cco:definition "An Image Content created by light falling on a photosensitive surface."@en ;
+                      cco:definition_source "https://en.wikipedia.org/wiki/Photograph"^^xsd:anyURI ;
                       cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                       rdfs:label "Photograph Content"@en .
 
@@ -1509,15 +1541,6 @@ cco:PredictiveInformationContentEntity rdf:type owl:Class ;
                                        cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                                        rdfs:comment "Since predictions are inherently about not-yet-existant things, the Modal Relation Ontology term 'describes' (i.e. mro:describes) should be used (instead of the standard cco:describes) to relate instances of Predictive Information Content Entity to the entities they are about."@en ;
                                        rdfs:label "Predictive Information Content Entity"@en .
-
-
-###  http://www.ontologyrepository.com/CommonCoreOntologies/PrimitiveGenericGlyphEntity
-cco:PrimitiveGenericGlyphEntity rdf:type owl:Class ;
-                                rdfs:subClassOf cco:GenericGlyphEntity ;
-                                cco:alternative_label "PGGE, Primitive GGE, Zero-Dimensional GGE, Zero-Dimensional Generic Glyph Entity"@en ;
-                                cco:definition "A Generic Glyph Entity that does not extend in any direction in logical space."@en ;
-                                cco:example_of_usage "The GDCs concretized by 'X', 'F', 'L', '.', ',', '!', '1', '2', '3'."@en ;
-                                rdfs:label "Primitive Generic Glyph Entity"@en .
 
 
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/PriorityMeasurementInformationContentEntity
@@ -1724,12 +1747,20 @@ cco:SphericalCoordinateSystem rdf:type owl:Class ;
 cco:SpreadsheetContent rdf:type owl:Class ;
                        owl:equivalentClass [ rdf:type owl:Restriction ;
                                              owl:onProperty cco:has_generic_structure ;
-                                             owl:someValuesFrom <https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/InformationEntityOntology.ttl#0000335>
+                                             owl:someValuesFrom cco:SpreadsheetStructure
                                            ] ;
                        rdfs:subClassOf cco:InformationContentEntity ;
                        cco:definition "An Information Content Entity that has generic structure some Spreadsheet Structure."@en ;
                        cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                        rdfs:label "Spreadsheet Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/SpreadsheetStructure
+cco:SpreadsheetStructure rdf:type owl:Class ;
+                         rdfs:subClassOf cco:InformationStructureEntity ;
+                         cco:definition "A Information Structure Entity that can relate Information Content Entities in tabular form."@en ;
+                         cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                         rdfs:label "Spreadsheet Structure"@en .
 
 
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/StandardTimeOfDayIdentifier
@@ -1920,38 +1951,6 @@ cco:WarningMessageContent rdf:type owl:Class ;
                                                                                    cco:definition "A One-Dimensional Barcode Content that is encoded as a pattern consisting of numerical digits 0-9 and the characters -$:/.+ and is used by logistics and healthcare professionals."@en ;
                                                                                    cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
                                                                                    rdfs:label "Codabar Barcode Content"@en .
-
-
-
-
-
-###  https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/InformationEntityOntology.ttl#0000325
-<https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/InformationEntityOntology.ttl#0000325> rdf:type owl:Class ;
-                                                                                                                          rdfs:subClassOf obo:BFO_0000031 ;
-                                                                                                                          cco:alternative_label "GSE"@en ;
-                                                                                                                          cco:definition "A Generically Dependent Continuant that can relate Generically Dependent Continuants, and if it does, partly consititutes an additional Generically Dependent Continuant along with the Generically Dependent Continuants it relates."@en ;
-                                                                                                                          rdfs:label "Generic Structure Entity"@en .
-
-
-###  https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/InformationEntityOntology.ttl#0000326
-<https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/InformationEntityOntology.ttl#0000326> rdf:type owl:Class ;
-                                                                                                                          rdfs:subClassOf <https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/InformationEntityOntology.ttl#0000325> ;
-                                                                                                                          cco:definition "A Generic Structure Entity that is prescribed by some Directive Information Content Entity."@en ;
-                                                                                                                          cco:example_of_usage "Microsoft Word Format, Spreadsheet Format (analog), Comma Seperated Value Format, Tab Seperated Value Format"@en ;
-                                                                                                                          rdfs:label "Format Structure"@en .
-
-
-
-###  https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/InformationEntityOntology.ttl#0000334
-<https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/InformationEntityOntology.ttl#0000334> rdf:type owl:Class ;
-                                                                                                                          rdfs:subClassOf <https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/InformationEntityOntology.ttl#0000325> ;
-                                                                                                                          rdfs:label "Database Structure"@en .
-
-
-###  https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/InformationEntityOntology.ttl#0000335
-<https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/InformationEntityOntology.ttl#0000335> rdf:type owl:Class ;
-                                                                                                                          rdfs:subClassOf <https://raw.githubusercontent.com/avsculley/CommonCoreOntologies/ice-iba-refactor/InformationEntityOntology.ttl#0000325> ;
-                                                                                                                          rdfs:label "Spreadsheet Structure"@en .
 
 
 #################################################################
