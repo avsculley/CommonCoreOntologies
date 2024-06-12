@@ -94,4 +94,11 @@
 5. Document Form Content =def. definition "An Information Content Entity generically depends on some Document Form."@en
 
 
+## June 12, 2024
 
+### Changes
+
+### Additions
+
+1. Database structure definition "An Information Structure Entity that can relate Information Content Entites for efficient retrival, management, and use of the Information Content Entities."@en
+2. Spreadsheet structure definition "A Information Structure Entity that can relate Information Content Entities in tabular form."@en
