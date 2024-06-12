@@ -1066,7 +1066,7 @@ cco:InformationContentEntity rdf:type owl:Class ;
                                                  ] ;
                              rdfs:subClassOf cco:InformationEntity ;
                              cco:alternative_label "ICE"@en ;
-                             cco:definition "A Generically Dependent Continuant that generically depends on some Information Bearing Entity and stands in relation of aboutness to some Entity."@en ;
+                             cco:definition "An Information Entity that generically depends on some Information Bearing Entity and stands in relation of aboutness to some Entity."@en ;
                              cco:definition_source "http://purl.obolibrary.org/obo/IAO_0000030" ;
                              cco:elucidation "Information Content Entity is here intended to be a class of Entities whose instances are the informational content of Information Bearing Entities. For example, three instances of information bearers -- such as a bar chart, color-coded map, and a written report -- each of which lists the GDP of Countries for the year 2010 are each different carriers of the same information content. It is this content that is generically dependent upon its carrier. This treatment of Informational Content Entity (cf. the Information Artifact Ontology) leads to a principle of subtyping based upon the relationship that ICE's have with the Entity they are about rather than characteristics such as format, language, measurement scale, or media. The latter are treated here as being Qualities of bearers."@en ;
                              cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
