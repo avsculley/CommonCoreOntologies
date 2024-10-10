@@ -1442,6 +1442,425 @@ cco:VeracityMeasurementInformationContentEntity rdf:type owl:Class ;
                                                              "Note, the term 'accuracy' is avoided due to its ambiguity between: correctness-of-performance (see: 'Reliability Measurement Information Content Entity'), correctness-of-information ('Veracity Measurement Information Content Entity'), and adherance-to-expectations (see: 'Deviation Measurement Information Content Entity')."@en ;
                                                 rdfs:label "Veracity Measurement Information Content Entity"@en .
 
+###  http://www.ontologyrepository.com/CommonCoreOntologies/AcademicDegreeContent
+cco:AcademicDegreeContent rdf:type owl:Class ;
+                          rdfs:subClassOf cco:CertificateContent ;
+                          cco:definition "A Certificate Content issued by an Educational Organization to a Person to indicate that the Person has satisfactorily completed a course of study, or as an honorary recognition of the Person's achievement."@en ;
+                          cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                          rdfs:label "Academic Degree Content"@en .
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/AztecCodeContent
+cco:AztecCodeContent rdf:type owl:Class ;
+                     rdfs:subClassOf cco:TwoDimensionalBarcodeContent ;
+                     cco:definition "A Two-Dimensional Barcode Content that is used by the transportation industry to scan tickets."@en ;
+                     cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                     rdfs:label "Aztec Code Content"@en .
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/BarcodeContent
+cco:BarcodeContent rdf:type owl:Class ;
+                   rdfs:subClassOf cco:DocumentContent ;
+                   cco:definition "A document content consisting of one or more designative or directive content entities represented as a series of glyphs encoded as patterns consisting of rectangles and spaces of a small set of characteristic sizes, with the intention of being visually compact and able to be reliably decoded from image content."@en ;
+                   cco:example_of_usage "The content of a UPC barcode on a Pop Tarts box" ,
+                                            "The content of a QR code on a restaurant’s menu" ,
+                                            "The content of the ISBN barcode on this copy of Tolstoy’s War and Peace" ;
+                   cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                   rdfs:label "Barcode Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/BookContent
+cco:BookContent rdf:type owl:Class ;
+                rdfs:subClassOf cco:DocumentContent ;
+                cco:definition "A Document Content intended to be consumed by a relatively general audience and whose concretization is of substantial length."@en ;
+                cco:example_of_usage "The content of Tolstoy's War and Peace, which can be concretized in a paper book and an e-book" ,
+                                            "The content of Derek Parfit’s Reasons and Persons, which can be concretized in a paper book and an e-book" ,
+                                            "The content of Green Eggs and Ham by Dr. Seuss, which can be concretized in a paper book and an e-book" ;
+                cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                rdfs:label "Book Content"@en .
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/CertificateContent
+cco:CertificateContent rdf:type owl:Class ;
+                       rdfs:subClassOf cco:DocumentContent ;
+                       cco:definition "A Document Content which attests to certain demonstrated characteristics of an Object, Person, or Organization."@en ;
+                       cco:example_of_usage "The content of Sara’s Bachelor of Science degree in Information Science" ,
+                                            "The content of Tyler’s U.S. Passport" ,
+                                            "The content of Alec’s birth certificate" ;
+                       cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                       rdfs:label "Certificate Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/ChartContent
+cco:ChartContent rdf:type owl:Class ;
+                 rdfs:subClassOf cco:ImageContent ;
+                 cco:definition "An Image content that is designed to represent amounts or comparisons using lines and shapes that mirror differences in amount by differences in height, area, texture, or color."@en ;
+                 cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                 rdfs:label "Chart Content"@en .
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/Code128BarcodeContent
+cco:Code128BarcodeContent rdf:type owl:Class ;
+                          rdfs:subClassOf cco:OneDimensionalBarcodeContent ;
+                          cco:definition "A One-Dimensional Barcode Content that is encoded as a pattern of up to 128 ASCII characters and is used primarily in supply chains."@en ;
+                          cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                          rdfs:label "Code 128 Barcode Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/Code39BarcodeContent
+cco:Code39BarcodeContent rdf:type owl:Class ;
+                         rdfs:subClassOf cco:OneDimensionalBarcodeContent ;
+                         cco:definition "A One-Dimensional Barcode Content that is encoded as a pattern consistinf of 39 characters that are numbers 0-9, capital letters A-Z, or the symbols -.$/+% and space and is used primarily in automotive and defense industries."@en ;
+                         cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                         rdfs:label "Code 39 Barcode Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/Code93BarcodeContent
+cco:Code93BarcodeContent rdf:type owl:Class ;
+                         rdfs:subClassOf cco:OneDimensionalBarcodeContent ;
+                         cco:definition "A One-Dimensional Barcode Content that is encoded as a pattern consisting of up to 93 ASCII characters and is used in logistics to identify packages in retail inventory, lable electornic components, and provide supplementary delivery information."@en ;
+                         cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                         rdfs:label "Code 93 Barcode Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/CodeListContent
+cco:CodeListContent rdf:type owl:Class ;
+                    rdfs:subClassOf cco:ListContent ;
+                    cco:definition "A List Content that has information content part only Code Identifiers."@en ;
+                    cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                    rdfs:label "Code List Content"@en .
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/DataMatrixCodeContent
+cco:DataMatrixCodeContent rdf:type owl:Class ;
+                          rdfs:subClassOf cco:TwoDimensionalBarcodeContent ;
+                          cco:definition "A Two-Dimensional Barcode Content that is encoded as a pattern consisting of cells arranged in rectangular patterns and is used for marking small items in logistics and operations."@en ;
+                          cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                          rdfs:label "Data Matrix Code Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/DatabaseContent
+cco:DatabaseContent rdf:type owl:Class ;
+                    rdfs:subClassOf cco:InformationContentEntity ;
+                    cco:definition "A collection of information content entities access to which is by keyword, identifier, or structured query, such access designed to and intended to be fast relative to finding entities by examining each member of the collection in turn."@en ;
+                    cco:example_of_usage "The content of a healthcare database" ,
+                                            "The content of a database of customers" ,
+                                            "The content of a database of products sold by Amazon" ;
+                    cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                    rdfs:label "Database Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/DiagramContent
+cco:DiagramContent rdf:type owl:Class ;
+                   rdfs:subClassOf cco:ImageContent ;
+                   cco:definition "An Image Content that is designed to represent some entitiy in a simplified way such that key aspects of the entitiy are conveyed."@en ;
+                   cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                   rdfs:label "Diagram Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/DocumentContent
+cco:DocumentContent rdf:type owl:Class ;
+                    rdfs:subClassOf cco:InformationContentEntity ;
+                    cco:definition "A collection of information content entities intended to be understood together as a whole"@en ;
+                    cco:example_of_usage "The content of Tolstoy’s War and Peace" ,
+                                            "The content of a syllabus" ,
+                                            "The content of a collage" ;
+                    cco:definition_source "http://purl.obolibrary.org/obo/iao.owl"^^xsd:anyURI ;
+                    cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                    rdfs:label "Document Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/DocumentFormContent
+cco:DocumentFormContent rdf:type owl:Class ;
+                        owl:equivalentClass [ rdf:type owl:Restriction ;
+                                   owl:onProperty obo:BFO_0000084 ;
+                                   owl:someValuesFrom cco:DocumentForm
+                                 ] ;
+                        rdfs:subClassOf cco:DocumentContent ;
+                        cco:definition "An Information Content Entity generically depends on some Document Form."@en ;
+                        cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                        rdfs:label "Document Form Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/EAN13BarcodeContent
+cco:EAN13BarcodeContent rdf:type owl:Class ;
+                        rdfs:subClassOf cco:EANBarcodeContent ;
+                        cco:definition "An EAN Barcode Content that is encoded as a pattern consisting of 13 numerical digits and is used to designate products at the point of sale."@en ;
+                        cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                        rdfs:label "EAN-13 Barcode Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/EAN8BarcodeContent
+cco:EAN8BarcodeContent rdf:type owl:Class ;
+                       rdfs:subClassOf cco:EANBarcodeContent ;
+                       cco:definition "An EAN Barcode Content that is encoded as a pattern consisting of 8 numerical digits and is used to designate products at the point of sale."@en ;
+                       cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                       rdfs:label "EAN-8 Barcode Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/EANBarcodeContent
+cco:EANBarcodeContent rdf:type owl:Class ;
+                      rdfs:subClassOf cco:OneDimensionalBarcodeContent ;
+                      cco:definition "A One-Dimensional Barcode Content that is encoded as a pattern consisting of 8 or 13 numerical digits and is used to scan consumer goods."@en ;
+                      cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                      rdfs:label "EAN Barcode Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/EmailMessageContent
+cco:EmailMessageContent rdf:type owl:Class ;
+                        rdfs:subClassOf cco:MessageContent ;
+                        cco:definition "A Message Content that is transmitted to the recipient's Email Box."@en ;
+                        cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                        rdfs:label "Email Message Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/GS1DataBarBarcodeContent
+cco:GS1DataBarBarcodeContent rdf:type owl:Class ;
+                             rdfs:subClassOf cco:OneDimensionalBarcodeContent ;
+                             cco:definition "A One-Dimensional Barcode Content that is encoded as a pattern consisting of 2-14 numerical digits and is used in retail and healthcare."@en ;
+                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                             rdfs:label "GS1 DataBar Barcode Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/ISBNBarcodeContent
+cco:ISBNBarcodeContent rdf:type owl:Class ;
+                       rdfs:subClassOf cco:EANBarcodeContent ;
+                       cco:definition "An EAN Barcode Content that is used to designate books."@en ;
+                       cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                       rdfs:label "ISBN Barcode Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/ISSNBarcodeContent
+cco:ISSNBarcodeContent rdf:type owl:Class ;
+                       rdfs:subClassOf cco:EANBarcodeContent ;
+                       cco:definition "An EAN Barcode Content that is used to designate periodicals."@en ;
+                       cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                       rdfs:label "ISSN Barcode Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/ITFBarcodeContent
+cco:ITFBarcodeContent rdf:type owl:Class ;
+                      rdfs:subClassOf cco:OneDimensionalBarcodeContent ;
+                      cco:definition "A One-Dimensional Barcode Content that is encoded as a pattern consisting of an even number of numerical characters and is used primarily in packaging and distribution."@en ;
+                      cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                      rdfs:label "ITF Barcode Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/ImageContent
+cco:ImageContent rdf:type owl:Class ;
+                 rdfs:subClassOf cco:RepresentationalInformationContentEntity ;
+                 cco:definition "An Representational Information Content Entity that is intended to be concretized in such a way as to take advantage of visual perception capabilities that go beyond reading text."@en ;
+                 cco:example_of_usage "The diagrammatic representation of a knowledge graph" ,
+                                            "The content of a panoramic picture of the Grand Canyon" ,
+                                            "The content of a pie chart" ;
+                 cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                 rdfs:label "Image Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/InstrumentDisplayPanelContent
+cco:InstrumentDisplayPanelContent rdf:type owl:Class ;
+                                  rdfs:subClassOf cco:MeasurementInformationContentEntity ;
+                                  cco:definition "A Measurement Information Content Entity that is about some Artifact and is derived by the instrumentation Sensors of that Artifact."@en ;
+                                  cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                                  rdfs:label "Instrument Display Panel Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/Jan13BarcodeContent
+cco:Jan13BarcodeContent rdf:type owl:Class ;
+                        rdfs:subClassOf cco:EANBarcodeContent ;
+                        cco:definition "An EAN Barcode Content that is encoded as a pattern consisting of 13 numerical digits and is used primarily in Japan to designate products at the point of sale."@en ;
+                        cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                        rdfs:label "JAN-13 Barcode Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/JournalArticleContent
+cco:JournalArticleContent rdf:type owl:Class ;
+                          rdfs:subClassOf cco:DocumentContent ;
+                          cco:definition "A Document Content that is a specific brief composition on a specific topic as part of a Journal Issue."@en ;
+                          cco:example_of_usage "The content of a Law Review article" ,
+                                            "The content of an article in Applied Ontology" ,
+                                            "The content of an article in Nature Communications" ;
+                          cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                          rdfs:label "Journal Article Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/ListContent
+cco:ListContent rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Restriction ;
+                                   owl:onProperty obo:BFO_0000084 ;
+                                   owl:someValuesFrom cco:List
+                                 ] ;
+                rdfs:subClassOf cco:InformationContentEntity ;
+                cco:definition "An Information Content Entity that generically depends on some list."@en ;
+                cco:example_of_usage "The content of a grocery list" ,
+                                            "The content of a to-do list" ,
+                                            "The content of a list of lists" ;
+                cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                rdfs:label "List Content"@en .
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/MSIPlesseyBarcodeContent
+cco:MSIPlesseyBarcodeContent rdf:type owl:Class ;
+                             rdfs:subClassOf cco:OneDimensionalBarcodeContent ;
+                             cco:definition "A One-Dimensional Barcode Content that is encoded as a pattern consisting of an indefinite number of numerical characters and is used for inventory control and marking storage containers and shelves in warehouse environments."@en ;
+                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                             rdfs:label "MSI Plessey Barcode Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/MessageContent
+cco:MessageContent rdf:type owl:Class ;
+                   rdfs:subClassOf cco:DocumentContent ;
+                   cco:definition "A document content that is addressed to and intended to be received by one or more designated recipients."@en ;
+                   cco:example_of_usage "The content of an Amber Alert" ,
+                                            "The content of a tornado warning" ,
+                                            "The content of an e-mail" ;
+                   cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                   rdfs:label "Message Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/NotificationMessageContent
+cco:NotificationMessageContent rdf:type owl:Class ;
+                               rdfs:subClassOf cco:MessageContent ;
+                               cco:definition "A Message Content that describes a scenario that has been determined to merit attention by the recipient."@en ;
+                               cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                               rdfs:label "Notification Message Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/OneDimensionalBarcodeContent
+cco:OneDimensionalBarcodeContent rdf:type owl:Class ;
+                                 rdfs:subClassOf cco:BarcodeContent ;
+                                 cco:definition "A Barcode Content that is encoded as a pattern consisting of one-dimensional symbols arranged as parallel lines."@en ;
+                                 cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                                 rdfs:label "One-Dimensional Barcode Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/PDF417CodeContent
+cco:PDF417CodeContent rdf:type owl:Class ;
+                      rdfs:subClassOf cco:TwoDimensionalBarcodeContent ;
+                      cco:definition "A Two-Dimensional Barcode Content that is used in applications that require the storage of huge amounts of data."@en ;
+                      cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                      rdfs:label "PDF417 Code Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/PhotographContent
+cco:PhotographContent rdf:type owl:Class ;
+                      rdfs:subClassOf cco:ImageContent ;
+                      cco:definition "An Image Content created by light falling on a photosensitive surface."@en ;
+                      cco:definition_source "https://en.wikipedia.org/wiki/Photograph"^^xsd:anyURI ;
+                      cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                      rdfs:label "Photograph Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/QRCodeContent
+cco:QRCodeContent rdf:type owl:Class ;
+                  rdfs:subClassOf cco:TwoDimensionalBarcodeContent ;
+                  cco:definition "A Two-Dimensional Barcode Content that is encoded as a pattern consisting of numeric, alphanumeric, binary, or kanji information and is used primarily for tracking and marketing."@en ;
+                  cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                  rdfs:label "QR Code Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/ReportContent
+cco:ReportContent rdf:type owl:Class ;
+                  rdfs:subClassOf cco:DocumentContent ;
+                  cco:definition "A Document Content that conveys an account of some event, situation, or the result of some observation or inquiry."@en ;
+                  cco:example_of_usage "The content of a progress report" ,
+                                            "The content of an investigation report" ,
+                                            "The content of a book report" ;
+                  cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                  rdfs:label "Report Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/SpreadsheetContent
+cco:SpreadsheetContent rdf:type owl:Class ;
+                        owl:equivalentClass [ rdf:type owl:Restriction ;
+                                   owl:onProperty obo:BFO_0000084 ;
+                                   owl:someValuesFrom cco:Spreadsheet
+                                 ] ;
+                       rdfs:subClassOf cco:InformationContentEntity ;
+                       cco:definition "An Information Content Entity that generically depends on some Spreadsheet."@en ;
+                       cco:example_of_usage "The content of a timesheet that can be carried by a paper spreadsheet or a digital spreadsheet" ,
+                                            "The content of a spreadsheet that organizes research" ,
+                                            "The content of a spreadsheet of the results of a scientific experiment" ;
+                       cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                       rdfs:label "Spreadsheet Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/TimekeepingInstrumentContent
+cco:TimekeepingInstrumentContent rdf:type owl:Class ;
+                                 rdfs:subClassOf cco:CountMeasurementInformationContentEntity ;
+                                 cco:definition "An Information Content Entity that is about some temporal region."@en ;
+                                 cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                                 rdfs:label "Timekeeping Instrument Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/TranscriptContent
+cco:TranscriptContent rdf:type owl:Class ;
+                      rdfs:subClassOf cco:DocumentContent ;
+                      cco:definition "A Document Content that is a textual representation of what was initially spoken."@en ;
+                      cco:example_of_usage "The content of a transcript of a phone call" ,
+                                            "The content of a transcript of a criminal trial" ,
+                                            "The content of a transcript of a presidential debate" ;
+                      cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                      rdfs:label "Transcript Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/TwoDimensionalBarcodeContent
+cco:TwoDimensionalBarcodeContent rdf:type owl:Class ;
+                                 rdfs:subClassOf cco:BarcodeContent ;
+                                 cco:definition "A Barcode Content that is encoded as a pattern consisting of two-dimensional symbols."@en ;
+                                 cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                                 rdfs:label "Two-Dimensional Barcode Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/UPCABarcodeContent
+cco:UPCABarcodeContent rdf:type owl:Class ;
+                       rdfs:subClassOf cco:UPCBarcodeContent ;
+                       cco:definition "A UPC Barcode Content that is encoded as a pattern consisting in 12 numerical digits."@en ;
+                       cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                       rdfs:label "UPC-A Barcode Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/UPCBarcodeContent
+cco:UPCBarcodeContent rdf:type owl:Class ;
+                      rdfs:subClassOf cco:OneDimensionalBarcodeContent ;
+                      cco:definition "A One-Dimensional Barcode Content that is encoded as a pattern consisting of 6 or 12 numerical digits and is used to scan consumer goods."@en ;
+                      cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                      rdfs:label "UPC Barcode Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/UPCEBarcodeContent
+cco:UPCEBarcodeContent rdf:type owl:Class ;
+                       rdfs:subClassOf cco:UPCBarcodeContent ;
+                       cco:definition "A UPC Barcode Content that is encoded as a pattern consisting of 6 numerical digits."@en ;
+                       cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                       rdfs:label "UPC-E Barcode Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/VideoContent
+cco:VideoContent rdf:type owl:Class ;
+                 rdfs:subClassOf cco:DocumentContent ;
+                 cco:definition "A Document Content consisting of a sequence of Image Contents that are intended to be presented in temporal sequence and perceived as a visual whole."@en ;
+                 cco:example_of_usage "The content of Toy Story" ,
+                                            "The content of a video broadcast of a presidential debate" ,
+                                            "The content of a video of the Statue of Liberty" ;
+                 cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                 rdfs:label "Video Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/WarningMessageContent
+cco:WarningMessageContent rdf:type owl:Class ;
+                          rdfs:subClassOf cco:NotificationMessageContent ;
+                          cco:definition "A Notification Message Content that describes a possible or impending threat."@en ;
+                          cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                          rdfs:label "Warning Message Content"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/Mid/CodabarBarcodeContent
+<http://www.ontologyrepository.com/CommonCoreOntologies/Mid/CodabarBarcodeContent> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf cco:OneDimensionalBarcodeContent ;
+                                                                                   cco:definition "A One-Dimensional Barcode Content that is encoded as a pattern consisting of numerical digits 0-9 and the characters -$:/.+ and is used by logistics and healthcare professionals."@en ;
+                                                                                   cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                                                                                   rdfs:label "Codabar Barcode Content"@en .
+
+
+
+
+
+
 
 #################################################################
 #    Individuals
